@@ -1,0 +1,6 @@
+{
+  "<*>": {
+    "transformer": "./mobx-observer-transformer",
+    "@mobx-observer" : "string"
+  }
+}

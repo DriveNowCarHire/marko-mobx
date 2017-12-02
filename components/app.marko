@@ -1,0 +1,19 @@
+static {
+  const model = require("./model.js")
+}
+class {
+  increment() {
+    model.count++
+  }
+  onMount() {
+  }
+}
+<span mobx-observer='client'>
+    <button on-click("increment")>increment</button>
+
+    <div>Greetings : ${model.greeting}</div>
+    <div>Name : <print-name/></div>
+    <div>Count : <print-count/></div>
+
+    <p>try running in the console  model.name = 'Your Name'</p>
+</span>

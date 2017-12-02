@@ -1,0 +1,23 @@
+{
+  "name": "marko-lasso",
+  "version": "1.0.0",
+  "description": "Sampe of using Mobx to implement reactive markojs in same vein as mobx-react",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marko-js-samples/marko-lasso.git"
+  },
+  "author": "Cameron Braid <cameron@drivenow.com.au>",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.2",
+    "lasso": "^2.11.5",
+    "lasso-marko": "^2.3.0",
+    "marko": "^4.0.0",
+    "mobx": "^3.3.1"
+  },
+  "devDependencies": {}
+}
