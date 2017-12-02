@@ -8,8 +8,7 @@ class {
   }
 }
 $ {
-
-  // is there no other way in a component to get access to the renderBody function ?
+  // intercept the renderBody function to allow mobx to track model references and react based on changes
   if (!component.baseRenderBody) {
     component.$mobx = new Reaction('reaction', () => {
       if (input.hint && input.hint !== true) console.debug("reacting in " + input.hint)
