@@ -12,7 +12,7 @@ $ {
   // is there no other way in a component to get access to the renderBody function ?
   if (!component.baseRenderBody) {
     component.$mobx = new Reaction('reaction', () => {
-      if (input.hint) console.log("reacting in " + input.hint)
+      if (input.hint && input.hint !== true) console.debug("reacting in " + input.hint)
       component.forceUpdate()
     })
     component.baseRenderBody = input.renderBody
